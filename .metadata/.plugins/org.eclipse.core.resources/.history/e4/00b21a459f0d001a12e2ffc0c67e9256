@@ -1,0 +1,50 @@
+package mears.trace.stats_application.controllers;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import mears.trace.stats_application.models.User;
+import mears.trace.stats_application.repositories.FighterRepository;
+
+@Controller
+public class TableController {
+	
+	@Autowired
+	FighterRepository fRepo;
+	
+	@GetMapping("/tableView")
+	public String showTablePage(Model model, HttpSession sesh) {
+		model.addAttribute("allFighters", fRepo.showFighters());
+		if ( (Integer) model.getAttribute("tableCounter") == 0 ) {
+			model.addAttribute("tableCounter", 0);
+		}		
+		
+		
+		return "TableView";
+	}
+	
+	@PostMapping("/addToTable")
+	public String addToTable(@RequestParam("Add_ Fighter") Integer fId,
+								HttpSession sesh,
+								Model model) {
+		User u = (User) sesh.getAttribute("loggedUser");
+		if( u.getCount() > 4) {
+			return "redirect:/userPage";
+		}
+		uRepo.addToFavorites(u, fId);
+		u.setCount(u.getCount() + 1);		
+		sesh.setAttribute("loggedUser", u);		
+		
+		return "forward:/tableView";
+	}
+	
+	
+	
+	
+}

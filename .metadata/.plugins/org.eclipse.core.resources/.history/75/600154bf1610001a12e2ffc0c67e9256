@@ -1,0 +1,95 @@
+package linkedlist;
+
+public class SinglyLinkedList {
+	Node head;
+	Node tail;
+	int size;
+		
+	public SinglyLinkedList(Node node) {
+		this.head = node;
+		this.tail = node;
+		this.size = 1;
+	}
+	public Node getHead() {
+		return head;
+	}
+	public void setHead(Node head) {
+		this.head = head;
+	}
+	public Node getTail() {
+		return tail;
+	}
+	public void setTail(Node tail) {
+		this.tail = tail;
+	}
+	
+	public void add(Node n) {
+		this.tail.setNext(n);
+		tail = n;
+		size++;
+	}
+	
+	public void insertAtIndex(Node n, int index) {
+		if(this.size<index) {
+			System.out.println("Invalid index, out of bounds for Linked List");
+			return;
+		}
+		if(this.size==index) {
+			this.add(n);
+		}
+		
+		Node place = head;
+		for(int i=0; i<index-1; i++) {
+			place = place.getNext();
+		}
+		Node temp = place.getNext();
+		place.setNext(n);
+		n.setNext(temp);		
+	}
+	
+	public void insertAfterValue(Node n, Object val) {
+		//test if head is the value, just set new head if so
+		if(this.head.getValue().equals(val)) {
+			n.setNext(this.head.getNext());
+			this.head.setNext(n);
+			return;
+		}
+		
+		Node pointer = this.getHead();
+		while(pointer.getNext() != null) {
+			
+		}
+	}
+	
+	public void deleteValue(Object val) {
+		//test if head is the value, just set new head if so
+		if(this.head.getValue().equals(val)) {
+			this.head = head.getNext();
+			return;
+		}
+		
+		Node pointer = this.getHead();
+		while (pointer.getNext() != null) {
+			if(pointer.getNext().getValue().equals(val)){
+				if(pointer.getNext().getNext() == null) {
+					pointer.setNext(null);
+					return;
+				}
+				pointer.setNext(pointer.getNext().getNext());
+				return;
+			}
+			pointer = pointer.getNext();
+		}				
+	}
+	
+	public void printList() {
+		Node pointer = this.getHead();
+		pointer.printNode();
+		System.out.print(" ");
+		while(pointer.getNext() != null) {
+			pointer = pointer.getNext();
+			pointer.printNode();
+			System.out.print(" ");
+		}
+	}
+}

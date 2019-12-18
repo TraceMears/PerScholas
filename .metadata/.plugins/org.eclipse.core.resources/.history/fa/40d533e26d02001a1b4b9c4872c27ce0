@@ -1,0 +1,44 @@
+package springbasic.controllers;
+
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import classes.User;
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/")
+	public String showWelcomePage(Model model) {	
+		model.addAttribute("datetime", LocalDateTime.now());
+		return "Welcome";
+	}
+	
+	@GetMapping("/Login")
+	public String loginForm(Model model) {
+		model.addAttribute("u", new User());
+		return "Login";
+	}
+	
+	@PostMapping("/Login")
+	public String showLoginPage() {
+		return "Result";
+	}
+	
+	@RequestMapping("/Hello")
+	public String showIndexPage() {
+		return "Hello";
+	}	
+	
+	@RequestMapping("/Congrats")
+	public String showCongratulationsPage() {
+		return "Congratulations";
+	}
+	
+	
+}

@@ -1,0 +1,30 @@
+package automation.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumBasicTest {
+
+	private static WebDriver driver;
+	
+	@BeforeClass
+	public static void setUP() {
+		System.setProperty("webdriver.chrome.driver", 
+						"C:\\Users\\Student\\Desktop\\libraries_and_tools\\chromedriver.exe" );
+		driver = new ChromeDriver();
+		
+		driver.get("http:\\localhost:8080\\SeleniumBasics\\HomeServlet");
+		//driver.get("http:\\perscholas.org");
+		
+	}	
+	
+	@Test
+	public void test() {
+		
+	}
+
+}

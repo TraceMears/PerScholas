@@ -1,0 +1,7 @@
+table 2
+fan 1
+couch 1
+lawnmower 1
+tv 3
+chair 8
+dishwasher 1

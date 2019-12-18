@@ -1,0 +1,5 @@
+package springcoreproject_01.models;
+
+public class SpringGreeting {
+
+}

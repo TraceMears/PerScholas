@@ -1,0 +1,5 @@
+package com.perscholas.jdbctemplate.models;
+
+public class Student {
+
+}

@@ -1,0 +1,5 @@
+package mears.trace.rest_controller.controllers;
+
+public class RestControllerImpl {
+
+}

@@ -1,0 +1,8 @@
+package array_grouping;
+
+public class ArrayGroup {
+	
+	public static void arrGroup(int[] arr, double subarraySize) {
+		int numOfArrays = Math.ceil( ((double) (arr.length))/ subarraySize));
+	}
+}

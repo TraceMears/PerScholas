@@ -1,0 +1,10 @@
+package springbasic.config;
+
+import org.springframework.context.annotation.Bean;
+
+public class RootAppConfig {
+	@Bean
+	public CourseRepository courseRepository() {
+		return new CourseRepository();
+	}
+}

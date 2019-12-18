@@ -1,0 +1,26 @@
+package zzbonus;
+
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class TimeFormatter {
+	
+	public Timestamp convertLDT2TS(LocalDateTime ldt) {
+		Timestamp ts = Timestamp.valueOf(ldt);
+		return ts;
+	}
+	
+	public LocalDateTime convertTS2LDT(Timestamp ts) {
+		LocalDateTime ldt = ts.toLocalDateTime();
+		return ldt;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

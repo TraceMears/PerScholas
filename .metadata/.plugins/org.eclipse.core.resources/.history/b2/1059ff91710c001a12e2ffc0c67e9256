@@ -1,0 +1,65 @@
+package linkedlist;
+
+public class SinglyLinkedList {
+	Node head;
+	Node tail;
+	int size;
+		
+	public SinglyLinkedList(Node node) {
+		this.head = node;
+		this.tail = node;
+		this.size = 1;
+	}
+	public Node getHead() {
+		return head;
+	}
+	public void setHead(Node head) {
+		this.head = head;
+	}
+	public Node getTail() {
+		return tail;
+	}
+	public void setTail(Node tail) {
+		this.tail = tail;
+	}
+	
+	public void add(Node n) {
+		this.tail.setNext(n);
+		tail = n;
+		size++;
+	}
+	
+	public void insertAtIndex(Node n, int index) {
+		if(this.size<index) {
+			System.out.println("Invalid index, out of bounds for Linked List");
+			return;
+		}
+		if(this.size==index) {
+			this.add(n);
+		}
+		
+		Node place = head;
+		for(int i=0; i<index-1; i++) {
+			place = place.getNext();
+		}
+		Node temp = place.getNext();
+		place.setNext(n);
+		n.setNext(temp);		
+	}
+	
+//	public void deleteValue(int val) {
+//		
+//		
+//	}
+	
+	public void printList() {
+		Node pointer = this.getHead();
+		pointer.printNode();
+		System.out.print(" ");
+		while(pointer.getNext() != null) {
+			pointer = pointer.getNext();
+			pointer.printNode();
+			System.out.print(" ");
+		}
+	}
+}

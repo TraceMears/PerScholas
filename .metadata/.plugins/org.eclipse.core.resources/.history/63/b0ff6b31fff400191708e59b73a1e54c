@@ -1,0 +1,27 @@
+package questionz10;
+
+import org.junit.Test;
+
+public class SchoolTests {
+	@Test
+	public void addCourseTest() {
+		System.out.println("SchoolTests addCourseTest.");
+	}
+	@Test
+	public void registerStudentTest() {
+		System.out.println("School Tests registerStudentTest.");
+	}
+	@Test
+	public void createWeeklyReportTest() {
+		System.out.println("School Tests createWeeklyReportTest.");
+	}
+	@Test
+	public void takeAttendanceTest() {
+		System.out.println("School Tests takeAttendanceTest.");
+	}
+	@Test
+	public void publishGradesTest() {
+		System.out.println("School Tests publishGradesTest.");
+	}
+}
+

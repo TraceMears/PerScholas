@@ -1,0 +1,5 @@
+package com.perscholas.hibernate_validation_dao.repository;
+
+public interface BookRepository {
+	String showBooks();
+}

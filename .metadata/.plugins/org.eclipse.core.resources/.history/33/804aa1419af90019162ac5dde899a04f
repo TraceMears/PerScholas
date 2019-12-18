@@ -1,0 +1,45 @@
+package com.perscholas.algorithms;
+
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.stream.IntStream;
+
+public class ArraySortExercise {
+
+	
+	public static void arrSort(int[] arr) {
+		Arrays.parallelSort(arr);
+		System.out.println("Min = " + arr[0]);
+		System.out.println("Max = " + arr[arr.length-1]);
+		System.out.println("Range = " + (arr[arr.length-1] - arr[0]));
+	}
+	
+	public static void arrayComparator(int[] arr) {
+		System.out.println("Choose which comparator you wish to search with(=, <, >)");
+		Scanner sc = new Scanner(System.in);
+		String c = sc.next();
+		switch (c) {
+		case "=":
+			System.out.println("What value do you want to see if exists in array?");
+			int check = sc.nextInt();
+			boolean test = IntStream.of(arr).anyMatch(x -> x==4);
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		int[] testArray = new int[25];
+		for(int i=0; i<25; i++) {
+			testArray[i] = (int)(Math.random()*850);
+		}
+		
+		arrSort(testArray);
+		
+		
+
+	}
+
+}

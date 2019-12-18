@@ -1,0 +1,9 @@
+package anagram;
+
+public class AnagramCheck {
+	
+	public boolean anagramTest(String a, String b) {
+		Map<Char, Integer> bHash = new HashMap<char, int>();
+		
+	}
+}

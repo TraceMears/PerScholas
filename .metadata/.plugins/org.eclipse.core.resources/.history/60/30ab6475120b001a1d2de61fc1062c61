@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Classified Ads</title>
+</head>
+<body>
+	<h1>Classified ads</h1>
+	<h2>Welcome ${displayName}!</h2>
+	
+	<fieldset>
+		<legend>Add Item</legend>
+		<form:form action="${pageContext.request.contextPath}/addItem" method="post" modelAttribute="item">
+			<div>
+				<label for="name">Title</label>
+				<div>
+					<form:input path="name" />
+					<p style="color:red;">
+						<form:errors path="name" class="error"></form:errors>
+					</p>
+				</div>				
+			</div>
+			<div>
+				<label for="price">Author</label>
+				<div>
+					<form:input path="price" />
+					<p style="color:red;">
+						<form:errors path="price" class="error"></form:errors>
+					</p>
+				</div>				
+			</div>
+			<input type="submit" value="Add Item" />
+		</form:form>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Book List</legend>
+		<table>
+			<tr>
+				<th>Book id</th>
+				<th>Title</th>
+				<th>Author</th>
+			</tr>
+			<c:forEach items="${allbooks}" var="book">
+				<tr>
+					<td>${book.bookId}</td>
+					<td>${book.title}</td>
+					<td>${book.author}</td>
+					<td><a href="${pageContext.request.contextPath}/removeBook/${book.bookId}">Remove Book</a></td>
+				</tr>
+			</c:forEach>
+		</table>
+	</fieldset>
+	
+	
+</body>
+</html>

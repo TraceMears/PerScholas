@@ -1,0 +1,15 @@
+package capitalize;
+
+public class Capitalize {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		public static void capitalizeEach(String s) {
+			String[] arr = s.split(" ");
+			
+		}
+	}
+
+}

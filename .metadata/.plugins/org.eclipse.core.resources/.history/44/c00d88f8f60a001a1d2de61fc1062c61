@@ -1,0 +1,5 @@
+package mears.trace.classified_ads.repositories;
+
+public interface ItemRepository {
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MainRunnerSuite" project="SeleniumSBA" tests="12" started="12" failures="0" errors="0" ignored="0">
+  <testsuite name="com.perscholas.selenium_cucumber_template.automation.mainRunner.MainRunnerSuite" time="19.244">
+    <testsuite name="com.perscholas.selenium_cucumber_template.runners.MenuOptionsRunner" time="4.346">
+      <testsuite name="Feature: Navigate the menu and add an item to the cart" time="4.346">
+        <testsuite name="Scenario: Use the menu to reach the correct category, then add item to cart" time="4.346">
+          <testcase name="Given user navigates to the online store" classname="Scenario: Use the menu to reach the correct category, then add item to cart" time="1.577"/>
+          <testcase name="When you use navigation menu to reach evening dresses" classname="Scenario: Use the menu to reach the correct category, then add item to cart" time="0.053"/>
+          <testcase name="Then you will be on the evening dresses page" classname="Scenario: Use the menu to reach the correct category, then add item to cart" time="0.289"/>
+          <testcase name="When you add printed dress to the cart" classname="Scenario: Use the menu to reach the correct category, then add item to cart" time="2.423"/>
+          <testcase name="Then printed dress should be in cart" classname="Scenario: Use the menu to reach the correct category, then add item to cart" time="0.004"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="com.perscholas.selenium_cucumber_template.runners.PopularSessionRunner" time="10.467">
+      <testsuite name="Feature: Add items to cart" time="10.467">
+        <testsuite name="Scenario: After you add an item to cart, the cart should have the correct number of items" time="10.467">
+          <testcase name="Given the user navigates to the online store" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="1.338"/>
+          <testcase name="When the user clicks on an item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.171"/>
+          <testcase name="Then the page for that item should open" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.131"/>
+          <testcase name="When you add an item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="1.951"/>
+          <testcase name="Then the cart should now have that item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="2.379"/>
+          <testcase name="When you add a second item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="4.491"/>
+          <testcase name="Then the cart should have both items" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.006"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

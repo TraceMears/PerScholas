@@ -1,0 +1,14 @@
+package anagram;
+
+public class AnagramMain {
+
+	public static void main(String[] args) {
+		
+		String a = "taste";
+		String b = "state";
+		
+		System.out.println(AnagramCheck.anagramTest(a, b));
+		
+	}
+
+}

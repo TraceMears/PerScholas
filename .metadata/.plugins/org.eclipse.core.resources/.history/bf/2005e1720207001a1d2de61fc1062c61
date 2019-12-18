@@ -1,0 +1,15 @@
+package linkedlist;
+
+public class SinglyLinkedList {
+	Node head;
+
+	public Node getHead() {
+		return head;
+	}
+
+	public void setHead(Node head) {
+		this.head = head;
+	}
+	
+	
+}

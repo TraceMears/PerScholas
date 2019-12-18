@@ -1,0 +1,9 @@
+package com.perscholas.jdbctemplate.controllers;
+
+public class StudentController {
+	
+	@GetMapping("/")
+	public String showStudentsPage() {
+		return "Students";
+	}
+}

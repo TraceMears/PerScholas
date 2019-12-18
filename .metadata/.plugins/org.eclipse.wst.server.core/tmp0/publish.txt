@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Dec 12 10:04:23 CST 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Student\\.m2\\repository\\org\\springframework\\spring-web\\5.2.1.RELEASE\\spring-web-5.2.1.RELEASE.jar=WEB-INF/lib/spring-web-5.2.1.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Student\\.m2\\repository\\org\\springframework\\spring-web\\5.2.0.RELEASE\\spring-web-5.2.0.RELEASE.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE.jar

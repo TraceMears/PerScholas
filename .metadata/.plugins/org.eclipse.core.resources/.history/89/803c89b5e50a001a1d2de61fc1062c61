@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>@Controller View</title>
+</head>
+<body>
+	<h1>To show a single student, append url with /displayStudent/id where id can be anything 1-3</h1>
+	<p>Append url with /displayStudents to show all students </p>
+	
+</body>
+</html>

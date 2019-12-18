@@ -1,0 +1,5 @@
+package com.perscholas.jdbctemplate.repositories.impl;
+
+public class MariaDbStudentRepository {
+
+}

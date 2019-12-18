@@ -1,0 +1,28 @@
+package classes;
+
+public class Home {
+	
+	private int homeId;
+	private int userId;
+	private String address1;
+	private String address2 = "";
+	private String city;
+	private String state;
+	private int zip;
+	private int yearBuilt;
+	private double homeValue;
+	public Home(int homeId, int userId, String address1, String city, String state, int zip, int yearBuilt,
+			double homeValue) {
+		super();
+		this.homeId = homeId;
+		this.userId = userId;
+		this.address1 = address1;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.yearBuilt = yearBuilt;
+		this.homeValue = homeValue;
+	}
+	
+	
+}

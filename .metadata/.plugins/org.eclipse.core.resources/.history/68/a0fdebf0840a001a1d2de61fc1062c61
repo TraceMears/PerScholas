@@ -1,0 +1,5 @@
+package com.perscholas.rest_controller.model;
+
+public class Vehicle {
+
+}

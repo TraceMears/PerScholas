@@ -1,0 +1,5 @@
+package springbasic.controllers;
+
+public class EventController {
+
+}

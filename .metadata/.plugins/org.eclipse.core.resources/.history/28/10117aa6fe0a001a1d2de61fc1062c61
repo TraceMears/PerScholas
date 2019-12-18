@@ -1,0 +1,12 @@
+package mears.trace.classified_ads.repositories;
+
+import java.util.List;
+
+import mears.trace.classified_ads.models.Item;
+
+public interface ItemRepository {
+	List<Item> showItems();
+	Integer addItem(Item item);
+	void orderItem(Integer id);
+	void cancelOrder(Integer id);
+}

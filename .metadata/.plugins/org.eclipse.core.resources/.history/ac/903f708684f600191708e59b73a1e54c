@@ -1,0 +1,29 @@
+package DAOs;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import JavaSBAProject_06.MariaDBConnection;
+
+public class FighterDAO {
+
+	//connection check
+	public static void connect() {
+		
+		try {
+			MariaDBConnection connect = new MariaDBConnection();
+			Connection conn = null;
+			conn = connect.getConnection();
+			if(conn != null) {
+				System.out.println("Connected");
+			}
+			conn.close();
+		}
+		catch(Exception e) {
+			System.out.println("Failed to connect");
+		}
+	}
+	
+}

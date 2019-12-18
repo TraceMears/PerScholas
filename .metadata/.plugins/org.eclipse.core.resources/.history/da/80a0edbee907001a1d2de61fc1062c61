@@ -1,0 +1,96 @@
+package com.perscholas.hibernate_validation_dao.repository.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.perscholas.hibernate_validation_dao.models.Book;
+import com.perscholas.hibernate_validation_dao.repository.BookRepository;
+
+@Repository
+public class MariaDbBookRepository implements BookRepository {
+
+	@Autowired
+	private NamedParameterJdbcTemplate hsqldbJdbcTemplate;
+
+	@Override
+	public List<Book> showBooks() throws ClassNotFoundException, IOException, SQLException {
+		String selectStudents = "SELECT * FROM students";
+		List<Book> result = hsqldbJdbcTemplate.query(selectStudents, 
+				new StudentMapper());
+		return result;
+	}
+	private final class StudentMapper implements RowMapper<Student> {
+		@Override
+		public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
+			Student student = new Student();
+			student.setStudentId(rs.getInt(1));
+			student.setName(rs.getString(2));
+			student.setEmail(rs.getString(3));
+			return student;
+		}
+	}
+	
+	@Override
+	public Integer createStudent(Student student) {
+		Integer id = -1;
+		MapSqlParameterSource params = new MapSqlParameterSource();
+		params.addValue("name", student.getName());
+		params.addValue("email", student.getEmail());
+		String createStudentSql = "insert into students (name, email) values "
+				+ "(:name,:email)";
+		KeyHolder keyHolder = new GeneratedKeyHolder();
+		Integer createResult = hsqldbJdbcTemplate.update(createStudentSql, 
+				params, keyHolder);
+		if (createResult > 0) {
+			id = keyHolder.getKey().intValue();
+		}
+		return id;
+	}
+	@Override
+	public Student getStudentById(Integer id) {
+		String selectStudentsById = "select * from students where student_id = :id";
+		Map<String, Object> params = new HashMap<String, Object>();
+		params.put("id", id);
+		Student student = null;
+		try
+		{
+			student = (Student)hsqldbJdbcTemplate.queryForObject(
+					selectStudentsById, params, new StudentMapper());
+		}
+		catch (EmptyResultDataAccessException e)
+		{
+			e.getMessage();
+		}
+		return student;
+	}
+	@Override
+	public Boolean updateStudent(Student student) {
+		Integer result;
+		Map<String, Object> params = new HashMap<>();
+		params.put("name", student.getName());
+		params.put("email", student.getEmail());
+		params.put("id", student.getStudentId());
+		String updateSql = "update students set name = :name, email = :email "
+				+ "where student_id = :id";
+		result = hsqldbJdbcTemplate.update(updateSql, params);
+		if (result > 0) {
+			return true;
+		}
+		return false;
+	}
+	@Override
+	public Boolean deleteStudent(Integer studentId) {
+		Integer result;
+		String deleteSql = "delete from students where student_id = :id";
+		Map<String, Object> params = new HashMap<String, Object>();
+		params.put("id", studentId);
+		result = hsqldbJdbcTemplate.update(deleteSql, params);
+		if (result > 0) {
+			return true;
+		}
+		return false;
+	}
+	
+
+}

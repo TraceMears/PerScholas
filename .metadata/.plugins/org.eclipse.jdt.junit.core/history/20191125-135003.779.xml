@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumXPathTest" project="Selenium_CSS_Selectors" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.perscholas.css_selectors.selenium_tests.SeleniumXPathTest" time="0.331">
+    <testcase name="xPathRelativePathTest" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathTest" time="0.013"/>
+    <testcase name="xPathAbsolutePathTest" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathTest" time="0.318"/>
+  </testsuite>
+</testrun>

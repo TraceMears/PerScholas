@@ -1,0 +1,78 @@
+package question9_classes;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import classes.parameterized.tests.Product;
+import question5_classes.User;
+
+public class UserDAO {
+	
+	public static MariaDBConnection connect = new MariaDBConnection();
+	public static Connection conn = null;
+	
+	//method to connect
+	public static boolean connect() {
+		
+		try {
+			conn = connect.getConnection();
+			if(conn != null) {
+				System.out.println("Connected");
+			}
+			return true;
+		}
+		catch(Exception e) {
+			System.out.println("Failed to connect");
+			return false;
+		}
+	}
+	
+	//method to close connection
+	public static boolean closeConnection() {
+		
+		try {
+			if(conn != null) {
+				conn.close();
+				System.out.println("Connection closed");
+			}			
+			return true;
+		}
+		catch(Exception e) {
+			System.out.println("Failed to close connection");
+			return false;
+		}
+	}
+	
+	//insert method
+		public static boolean insertProduct(User u) {
+				
+			//create insert query format
+			String insertQuery = "INSERT INTO user (name, password, javaScore, sqlScore) VALUES (?, ?, ?, ?)";
+			
+			try {
+				//creating an instance of prepareStatement, calling 
+				//prepareStatement method of connection object, with query as parameter
+				PreparedStatement stmt = conn.prepareStatement(insertQuery);
+				
+				//setting the column values of the insert query
+				stmt.setString(1, u.getName());
+				stmt.setString(2, u.getPassword());
+				stmt.setDouble(3, u.getJavaScore());
+				stmt.setDouble(4, u.getSqlScore());
+				
+				
+				//executing insert query
+				stmt.executeUpdate();			
+				stmt.close();
+				
+				System.out.println("Inserted user: " + u.getName());
+				return true;
+			}
+			catch(Exception e) {
+				System.out.println("Insert failed");
+				return false;
+			}
+					
+		}
+	
+}

@@ -1,0 +1,25 @@
+package mears.trace.stats_application.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import mears.trace.stats_application.repositories.FighterRepository;
+import mears.trace.stats_application.repositories.UserRepository;
+
+@Controller
+public class TableController {
+	
+	@Autowired
+	FighterRepository fRepo;
+	
+	@GetMapping("/tableView")
+	public String showTablePage(Model model) {
+		model.addAttribute("allFighters", fRepo.showFighters());
+		
+		
+		
+		return "TableView";
+	}
+	
+}

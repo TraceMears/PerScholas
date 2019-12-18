@@ -1,0 +1,15 @@
+package array_grouping;
+
+public class ArrayGroup {
+	
+	public static void arrGroup(int[] arr, double subarraySize) {
+		int numOfArrays = (int) Math.ceil( ((double) (arr.length))/ subarraySize);
+		
+		ArrayList<Object> array1 = new ArrayList<Object>();
+		
+		
+		
+		
+		
+	}
+}

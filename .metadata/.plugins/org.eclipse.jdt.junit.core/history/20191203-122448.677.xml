@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PopularSessionRunner" project="SeleniumSBA" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="com.perscholas.selenium_cucumber_template.runners.PopularSessionRunner" time="10.489">
+    <testsuite name="Feature: Add items to cart" time="10.489">
+      <testsuite name="Scenario: After you add an item to cart, the cart should have the correct number of items" time="10.489">
+        <testcase name="Given the user navigates to the online store" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="1.362"/>
+        <testcase name="When the user clicks on an item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.075"/>
+        <testcase name="Then the page for that item should open" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.171"/>
+        <testcase name="When you add an item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="2.082"/>
+        <testcase name="Then the cart should now have that item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="2.456"/>
+        <testcase name="When you add a second item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="4.335"/>
+        <testcase name="Then the cart should have both items" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.008"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

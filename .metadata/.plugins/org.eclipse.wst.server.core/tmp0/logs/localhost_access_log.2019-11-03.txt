@@ -1,0 +1,13 @@
+127.0.0.1 - - [03/Nov/2019:13:22:30 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:22:31 -0600] "GET /ServletExercisesKBA_1_to_4/ HTTP/1.1" 404 1105
+127.0.0.1 - - [03/Nov/2019:13:22:48 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:22:49 -0600] "GET /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 618
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:22:56 -0600] "POST /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 618
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:23:18 -0600] "POST /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 618
+127.0.0.1 - - [03/Nov/2019:13:30:10 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:30:11 -0600] "GET /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 618
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:30:18 -0600] "POST /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 618
+127.0.0.1 - - [03/Nov/2019:13:33:45 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:33:46 -0600] "GET /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 630
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:33:51 -0600] "POST /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 646
+0:0:0:0:0:0:0:1 - - [03/Nov/2019:13:33:56 -0600] "POST /ServletExercisesKBA_1_to_4/HomeServlet HTTP/1.1" 200 643

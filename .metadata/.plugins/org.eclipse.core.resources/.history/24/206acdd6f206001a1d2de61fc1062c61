@@ -1,0 +1,39 @@
+package array_grouping;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ArrayGroup {
+	
+	public static void arrGroup(int[] arr, double subarraySize) {
+		int numOfArrays = (int) Math.ceil( ((double) (arr.length))/ subarraySize);
+		
+		ArrayList<Integer> array1 = new ArrayList<Integer>();
+		for(int a: arr) {
+			array1.add(a);
+		}
+		
+//		ArrayList<Object> array2 = new ArrayList<Object>();
+		
+		System.out.println("{");
+		
+		for(int x=1; x<=numOfArrays; x++) {
+			System.out.println("[");	
+			for(int i=0; i<subarraySize; i++) {
+				
+			}
+			if(x==numOfArrays) {
+				
+			}
+			else {
+				System.out.println("], ");
+			}
+		}
+		
+		
+		
+		System.out.println("}");
+		
+		
+	}
+}

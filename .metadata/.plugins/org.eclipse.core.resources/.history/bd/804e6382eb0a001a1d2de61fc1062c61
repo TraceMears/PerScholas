@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SpringSBA_Question2_ClassifiedAds">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="SpringSBA_Question2_ClassifiedAds"/>
+        <property name="java-output-path" value="/SpringSBA_Question2_ClassifiedAds/target/classes"/>
+    </wb-module>
+</project-modules>

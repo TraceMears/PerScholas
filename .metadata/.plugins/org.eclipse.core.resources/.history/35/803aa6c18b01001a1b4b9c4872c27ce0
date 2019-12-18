@@ -1,0 +1,16 @@
+package springcoreproject_02.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import springcoreproject_02.models.Person;
+
+@Configuration
+public class GreetingConfig {
+	
+	@Bean
+	public Person person() {
+		return new Person();
+	}
+	
+}

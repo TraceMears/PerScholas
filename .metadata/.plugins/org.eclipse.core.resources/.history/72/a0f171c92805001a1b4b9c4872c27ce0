@@ -1,0 +1,11 @@
+package anagram;
+
+import java.util.Map;
+
+public class AnagramCheck {
+	
+	public boolean anagramTest(String a, String b) {
+		Map<Character, Integer> bHash = new HashMap<Character, Integer>();
+		
+	}
+}

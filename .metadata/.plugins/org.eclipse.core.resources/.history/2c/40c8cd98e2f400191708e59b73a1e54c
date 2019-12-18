@@ -1,0 +1,39 @@
+package question5;
+
+import static org.hamcrest.CoreMatchers.allOf;
+import static org.hamcrest.CoreMatchers.anyOf;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.everyItem;
+import static org.hamcrest.CoreMatchers.hasItems;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import question5_classes.ListMapClass;
+import question5_classes.User;
+
+public class ListMapClassTests {
+
+	ListMapClass lmc = new ListMapClass();
+	
+	@Test
+	public void citiesTest() {
+		List<String> cities = lmc.cities();
+		assertThat(cities, everyItem(is(not("Asheville"))));
+		assertThat(cities, anyOf(hasItems("Dallas", "Boston"), hasItems("Seoul")));
+		assertThat(cities, allOf(hasItems("Dallas"), not(hasItems("Asheville"))));
+	}
+	
+	@Test
+	public void userListTest() {
+		List<User> users = lmc.getUserList();
+		assertThat(users.get(2).calculateCredits(), equalTo(2));
+		assertThat(users.get(1).getJavaScore(), equalTo(88.0));
+		
+	}
+
+}

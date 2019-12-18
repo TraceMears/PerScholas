@@ -1,0 +1,25 @@
+package question1;
+
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class StringUnitTests {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		String str = new String("Per Scholas - 211 N Ervay St. #700 - Dallas, TX 75201");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

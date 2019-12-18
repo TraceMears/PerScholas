@@ -1,0 +1,25 @@
+Question 1) What is your favorite animal?
+A- Dog
+B- Cat
+C- Elephant
+D- Horse
+Question 2) What is your favorite food?
+A- Pizza
+B- Fried Chicken
+C- Hamburgers
+D- Hot dogs
+Question 3) What is your favorite color
+A- Red
+B- Blue
+C- Green
+D- Pink
+Question 4) What is your favorite season?
+A- Winter
+B- Spring
+C- Summer
+D- Fall
+Question 5) What is your favorite sport?
+A- Football
+B- Baseball
+C- Basketball
+D- Soccer

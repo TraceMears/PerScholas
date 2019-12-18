@@ -1,0 +1,14 @@
+127.0.0.1 - - [12/Nov/2019:10:46:40 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:46:41 -0600] "GET /SpringBasicProject/ HTTP/1.1" 200 190
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:02 -0600] "GET /SpringBasicProject/Login HTTP/1.1" 200 398
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:15 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:15 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:15 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:15 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:15 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:17 -0600] "GET /SpringBasicProject/Login HTTP/1.1" 200 398
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:20 -0600] "POST /SpringBasicProject/getLogin HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:10:47:22 -0600] "GET /SpringBasicProject/Login HTTP/1.1" 200 398
+127.0.0.1 - - [12/Nov/2019:11:30:58 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:11:31:00 -0600] "GET /SoftwareDeveloperClub/ HTTP/1.1" 200 558
+0:0:0:0:0:0:0:1 - - [12/Nov/2019:11:31:03 -0600] "GET /SoftwareDeveloperClub/HomeServlet/showRegistration HTTP/1.1" 500 1944

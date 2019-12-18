@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<nav>
+		<a href="${pageContext.request.contextPath}/HomeServlet/xPath1">Main Page</a>
+		<a href="${pageContext.request.contextPath}/HomeServlet/xPath2">Second Page</a>
+	</nav>
+
+</body>
+</html>

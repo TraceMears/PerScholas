@@ -1,0 +1,60 @@
+package mears.trace.classified_ads.repositories.impl;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+import com.perscholas.hibernate_validation_dao.models.Book;
+import com.perscholas.hibernate_validation_dao.repository.impl.MariaDbBookRepository.BookMapper;
+
+import mears.trace.classified_ads.models.Item;
+import mears.trace.classified_ads.repositories.ItemRepository;
+
+public class MariaDBItemRepository implements ItemRepository {
+
+	@Autowired
+	private NamedParameterJdbcTemplate mariaDbJdbcTemplate;
+	
+	private final class ItemMapper implements RowMapper<Item> {
+		@Override
+		public Item mapRow(ResultSet rs, int rowNum) throws SQLException {
+			Item item = new Item();
+			item.setItemId(rs.getInt(1));
+			item.setName(rs.getString(2));
+			item.setPrice(rs.getInt(3));
+			item.setStatus(rs.getInt(4));
+			return item;
+		}
+	}
+	
+	@Override
+	public List<Item> showItems() {
+		String selectItems = "SELECT * FROM items";
+		List<Item> result = mariaDbJdbcTemplate.query(selectItems, 
+				new ItemMapper());
+		return result;
+	}
+
+	@Override
+	public Integer addItem(Item item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void orderItem(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void cancelOrder(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

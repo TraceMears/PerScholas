@@ -1,0 +1,9 @@
+package mears.trace.stats_application.repositories;
+
+public interface UserRepository {
+	Boolean login(String user, String pass);
+	Boolean createUser(User u);
+	Boolean deleteUser(User u);
+	Boolean updatePassword();
+	Boolean addToFavorites(User u, Fighter f);
+}

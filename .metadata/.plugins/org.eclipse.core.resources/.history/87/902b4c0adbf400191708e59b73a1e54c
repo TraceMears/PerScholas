@@ -1,0 +1,16 @@
+package question2;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Split_and_Join_tests {
+
+	String str = new String("Per Scholas - 211 N Ervay St. #700 - Dallas, TX 75201");
+	String[] split = str.split(" ");
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,18 @@
+package questionz10;
+
+import org.junit.Test;
+
+public class StudentTests {
+	@Test
+	public void submitAssignmentTest() {
+		System.out.println("StudentTests submitAssignmentTest.");
+	}
+	@Test
+	public void submitExamTest() {
+		System.out.println("StudentTests submitExamTest.");
+	}
+	@Test
+	public void joinClubTest() {
+		System.out.println("StudentTests joinClubTest.");
+	}
+}

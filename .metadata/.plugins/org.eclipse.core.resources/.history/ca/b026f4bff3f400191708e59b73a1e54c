@@ -1,0 +1,42 @@
+package question9_classes;
+
+import java.sql.Connection;
+
+public class UserDAO {
+	
+	public static MariaDBConnection connect = new MariaDBConnection();
+	public static Connection conn = null;
+	
+	//method to connect
+	public static boolean connect() {
+		
+		try {
+			conn = connect.getConnection();
+			if(conn != null) {
+				System.out.println("Connected");
+			}
+			return true;
+		}
+		catch(Exception e) {
+			System.out.println("Failed to connect");
+			return false;
+		}
+	}
+	
+	//method to close connection
+	public static boolean closeConnection() {
+		
+		try {
+			if(conn != null) {
+				conn.close();
+				System.out.println("Connection closed");
+			}			
+			return true;
+		}
+		catch(Exception e) {
+			System.out.println("Failed to close connection");
+			return false;
+		}
+	}	
+	
+}

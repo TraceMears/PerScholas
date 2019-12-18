@@ -1,0 +1,6 @@
+package mears.trace.stats_application.repositories;
+
+
+public interface FighterRepository {
+	List<Fighter> showFighters();
+}

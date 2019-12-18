@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SpringSBA_Question2_ClassifiedAds">
+        <property name="context-root" value="SpringSBA_Question2_ClassifiedAds"/>
+    </wb-module>
+</project-modules>

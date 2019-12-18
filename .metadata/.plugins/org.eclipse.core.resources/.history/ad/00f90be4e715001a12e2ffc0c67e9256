@@ -1,0 +1,5 @@
+package com.perscholas.selenium_cucumber_template.automation;
+
+public class SeleniumTest {
+
+}

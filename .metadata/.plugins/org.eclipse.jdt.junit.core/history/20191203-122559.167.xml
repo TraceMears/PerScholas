@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PopularSessionRunner" project="SeleniumSBA" tests="7" started="7" failures="0" errors="2" ignored="4">
+  <testsuite name="com.perscholas.selenium_cucumber_template.runners.PopularSessionRunner" time="0.897">
+    <testsuite name="Feature: Add items to cart" time="0.897">
+      <testsuite name="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.879" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="center_column"]/div/div/div[3]/h1"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-249SKK4', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 36afeba8a9aaec3881a3f4526cc8073e
+*** Element info: {Using=xpath, value=//*[@id="center_column"]/div/div/div[3]/h1}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at com.perscholas.selenium_cucumber_template.step_definitions.PopularSessionStepDef.the_page_for_that_item_should_open(PopularSessionStepDef.java:48)&#13;
+	at ✽.Then the page for that item should open(src/test/java/com/perscholas/selenium_cucumber_template/features/PopularSessionRequirement.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given the user navigates to the online store" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.75"/>
+        <testcase name="When the user clicks on an item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.124"/>
+        <testcase name="Then the page for that item should open" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.004">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="center_column"]/div/div/div[3]/h1"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-249SKK4', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Student\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 36afeba8a9aaec3881a3f4526cc8073e
+*** Element info: {Using=xpath, value=//*[@id="center_column"]/div/div/div[3]/h1}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at com.perscholas.selenium_cucumber_template.step_definitions.PopularSessionStepDef.the_page_for_that_item_should_open(PopularSessionStepDef.java:48)&#13;
+	at ✽.Then the page for that item should open(src/test/java/com/perscholas/selenium_cucumber_template/features/PopularSessionRequirement.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When you add an item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.001" ignored="true"/>
+        <testcase name="Then the cart should now have that item" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.001" ignored="true"/>
+        <testcase name="When you add a second item to cart" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.0" ignored="true"/>
+        <testcase name="Then the cart should have both items" classname="Scenario: After you add an item to cart, the cart should have the correct number of items" time="0.005" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

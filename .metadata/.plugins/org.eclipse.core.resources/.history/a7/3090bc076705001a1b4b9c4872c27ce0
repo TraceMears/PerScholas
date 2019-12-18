@@ -1,0 +1,20 @@
+package capitalize;
+
+public class Capitalize {
+
+	public static void main(String[] args) {
+		String string = "hello you need to capitalize each word of this string";
+		capitalizeEach(string);		
+	}
+
+	public static void capitalizeEach(String s) {
+		String[] arr = s.split(" ");
+		System.out.println(arr.toString());
+		for(String str : arr) {
+			str = str.substring(0, 1).toUpperCase() + str.substring(1);
+		}
+		for(String str: arr) {
+			System.out.print(str + " ");
+		}
+	}
+}

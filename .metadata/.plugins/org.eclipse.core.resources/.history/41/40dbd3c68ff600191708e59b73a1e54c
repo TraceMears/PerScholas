@@ -1,0 +1,66 @@
+package DAOs;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import classes.Fighter;
+
+public class FighterDAO {
+
+	//connection check
+	public static void connect() {
+		
+		try {
+			MariaDBConnection connect = new MariaDBConnection();
+			Connection conn = null;
+			conn = connect.getConnection();
+			if(conn != null) {
+				System.out.println("Connected");
+			}
+			conn.close();
+		}
+		catch(Exception e) {
+			System.out.println("Failed to connect");
+		}
+	}
+	
+	//insert method
+	public static void createFighter(Fighter f) {
+				
+		//creating mariaDB connection and a Connection object to run queries on
+		MariaDBConnection connect = new MariaDBConnection();
+		Connection conn = null;
+		
+		//create insert query format
+		String insertQuery = "INSERT INTO fighter (SLpM, SApM, TDpF, subPF, koPF, FinRate) VALUES (?, ?, ?, ?, ?, ?)";
+		
+		try {
+			//creating a local instance of the connection object and a statement object
+			conn = connect.getConnection();
+			//creating an instance of prepareStatement, calling 
+			//prepareStatement method of connection object, with query as parameter
+			PreparedStatement stmt = conn.prepareStatement(insertQuery);
+			
+			//setting the column values of the insert query
+			stmt.setDouble(1, f.getSigLpm());
+			stmt.setDouble(2, f.getSigApm());
+			stmt.setDouble(3, f.getTdpF());
+			stmt.setDouble(4, f.getSubpF());
+			stmt.setDouble(5, f.getKoPF());
+			stmt.setDouble(6, f.getKoPF());
+			
+			//executing insert query
+			stmt.executeUpdate();			
+			//close connection
+			conn.close();
+			System.out.println("Inserted " + courseName);
+		}
+		catch(Exception e) {
+			System.out.println("Insert failed");
+		}
+				
+	}
+	
+}

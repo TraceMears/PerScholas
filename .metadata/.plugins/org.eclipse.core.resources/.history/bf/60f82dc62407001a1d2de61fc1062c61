@@ -1,0 +1,27 @@
+package linkedlist;
+
+public class ListMain {
+
+	public static void main(String[] args) {
+		Node n = new Node("Value");
+		SinglyLinkedList list = new SinglyLinkedList(n);
+		
+		Node n1 = new Node(12);
+		list.add(n1);
+		Node n2 = new Node(36.7);
+		list.add(n2);
+		Node n3 = new Node(true);
+		list.add(n3);
+		Node n4 = new Node("Chen");
+		list.add(n4);
+		Node n5 = new Node(43);
+		list.add(n5);
+//		Node n6 = new Node(38);
+//		list.insertAt(n6, 3);
+		
+		list.printList();
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+Grades for class:
+Trace:	90.0
+Goutham:	85.0
+Chen:	95.0
+Chris:	100.0
+Amira:	85.0
+Gabby:	80.0
+Ivell:	75.0
+Brian:	70.0
+Yosab:	65.0
+
+Minimum score: 65.0
+Maximum score: 100.0
+Average score: 82.78

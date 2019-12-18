@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update password</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>Change Password</legend>
+		<form action="${pageContext.request.contextPath}/changePass" method="post">
+			<div>
+				<label for="newPass">New Password</label>
+				<div>
+					<input type="text" id="newPass" name="newPass" value="" />
+				</div>	
+			</div>
+			<div>
+				<label for="newPass2">Confirm New Password</label>
+				<div>
+					<input type="text" id="newPass2" name="newPass2" value="" />
+				</div>
+			</div>
+		</form>
+	</fieldset>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+</body>
+</html>

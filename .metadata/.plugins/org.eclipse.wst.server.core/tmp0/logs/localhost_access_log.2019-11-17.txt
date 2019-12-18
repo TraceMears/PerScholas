@@ -1,0 +1,13 @@
+127.0.0.1 - - [17/Nov/2019:22:49:36 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:22:49:38 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:10:03 -0600] "POST /SpringBookProject_Repository/ HTTP/1.1" 405 1115
+127.0.0.1 - - [17/Nov/2019:23:44:38 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:44:40 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897
+127.0.0.1 - - [17/Nov/2019:23:46:31 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:46:33 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897
+127.0.0.1 - - [17/Nov/2019:23:48:19 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:48:21 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897
+127.0.0.1 - - [17/Nov/2019:23:49:18 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:49:19 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897
+127.0.0.1 - - [17/Nov/2019:23:59:04 -0600] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Nov/2019:23:59:07 -0600] "GET /SpringBookProject_Repository/ HTTP/1.1" 200 897

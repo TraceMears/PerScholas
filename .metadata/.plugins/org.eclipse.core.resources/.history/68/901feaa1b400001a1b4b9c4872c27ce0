@@ -1,0 +1,33 @@
+package servlets.project03;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class UserDAO {
+
+	static Connection conn = null;
+	static MariaDBConnection connect = new MariaDBConnection();
+	
+	public static void testConnection() {
+		
+		try {
+			conn = connect.getConnection();
+			if(conn != null) {
+				System.out.println("Connected");
+			}
+		}
+		catch(Exception e) {
+			e.getMessage();
+			System.out.println("Database connection failed.");
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		testConnection();
+	}
+}

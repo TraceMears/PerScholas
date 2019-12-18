@@ -1,0 +1,17 @@
+package com.perscholas.software_developer_club.controllers;
+
+public class Snippet {
+	public static void main(String[] args) {
+		<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-webmvc</artifactId>
+			    <version>5.2.1.RELEASE</version>
+			</dependency>
+		  	<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-context</artifactId>
+			    <version>5.2.1.RELEASE</version>
+			</dependency>
+	}
+}
+

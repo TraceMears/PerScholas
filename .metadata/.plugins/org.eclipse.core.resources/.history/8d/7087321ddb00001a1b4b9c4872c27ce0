@@ -1,0 +1,25 @@
+package classes;
+
+import java.time.LocalDateTime;
+
+public class Quote {
+	
+	private int quoteId;
+	private int homeId;
+	private double premium;
+	private LocalDateTime startDate;
+	private LocalDateTime expiration;
+	private int activeFlag;
+	
+	public Quote(int quoteId, int homeId, double premium, LocalDateTime startDate, LocalDateTime expiration,
+				int activeFlag) {
+		this.quoteId = quoteId;
+		this.homeId = homeId;
+		this.premium = premium;
+		this.startDate = startDate;
+		this.expiration = expiration;
+		this.activeFlag = activeFlag;
+	}
+	
+	
+}

@@ -1,0 +1,50 @@
+package linkedlist;
+
+public class SinglyLinkedList {
+	Node head;
+	Node tail;
+		
+	public SinglyLinkedList(Node node) {
+		this.head = node;
+		this.tail = node;
+	}
+	public Node getHead() {
+		return head;
+	}
+	public void setHead(Node head) {
+		this.head = head;
+	}
+	public Node getTail() {
+		return tail;
+	}
+	public void setTail(Node tail) {
+		this.tail = tail;
+	}
+	
+	public void add(Node n) {
+		tail.setNext(n);
+		n = tail;
+	}
+	
+	public void insertAt(Node n, int index) {
+		Node place = head;
+		for(int i=0; i<index-1; i++) {
+			place = place.getNext();
+		}
+		Node temp = place;
+		if(temp.getNext() != null) {
+			temp=place.getNext();
+		}
+		place.setNext(n);
+		n.setNext(temp);		
+	}
+	
+	public void printList() {
+		Node pointer = this.getHead();
+		while(pointer.getNext() != null) {
+			pointer.printNode();
+			pointer = pointer.getNext();
+		}
+		pointer.printNode();
+	}
+}

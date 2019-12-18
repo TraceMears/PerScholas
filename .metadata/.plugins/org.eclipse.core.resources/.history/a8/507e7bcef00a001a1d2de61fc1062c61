@@ -1,0 +1,22 @@
+package mears.trace.classified_ads.models;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+public class Item {
+
+	@Id
+	@GeneratedValue
+	private Integer itemId;
+	
+	@Size(min=2, max=50,  message="Title must be between 2 and 50 characters long.")
+	@NotBlank(message="Title is required.")
+	private String title;
+	
+	@Size(min=2, max=50,  message="Author name must be between 2 and 50 characters long.")
+	@NotBlank(message="Author name is required.")
+	private String author;	
+	
+}

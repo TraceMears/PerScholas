@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumTests" project="StatsApp" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="mears.trace.stats_application.selenium_tests.SeleniumTests" time="5.837">
+    <testcase name="a_addFavorite" classname="mears.trace.stats_application.selenium_tests.SeleniumTests" time="1.693"/>
+    <testcase name="b_removeFavorite" classname="mears.trace.stats_application.selenium_tests.SeleniumTests" time="0.856"/>
+    <testcase name="c_addToTable" classname="mears.trace.stats_application.selenium_tests.SeleniumTests" time="1.346"/>
+    <testcase name="d_removeFromTable" classname="mears.trace.stats_application.selenium_tests.SeleniumTests" time="1.166"/>
+    <testcase name="e_loginTest" classname="mears.trace.stats_application.selenium_tests.SeleniumTests" time="0.776"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,9 @@
+package mears.trace.stats_application.models;
+
+public class Favorite {
+	
+	private int userId;
+	private int fighterId;
+	private int number;
+	
+}

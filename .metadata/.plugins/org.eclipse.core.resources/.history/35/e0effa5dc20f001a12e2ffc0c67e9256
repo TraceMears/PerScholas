@@ -1,0 +1,22 @@
+package com.perscholas.css_selectors.selenium_tests;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumXPathAxesTest {
+	
+	private static WebDriver driver;
+	@BeforeClass
+	public static void setUp() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Student\\Desktop\\libraries_and_tools\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://localhost:8080/Selenium_CSS_Selectors/HomeServlet/xPath1");
+	}
+	@AfterClass
+	public static void shutDown() {
+		driver.close();
+	}
+	
+}

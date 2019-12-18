@@ -1,0 +1,44 @@
+package com.perscholas.css_selectors.selenium_tests;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumCSSTest {
+	
+	private static WebDriver driver;
+	@BeforeClass
+	public static void setUp() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Student\\Desktop\\libraries_and_tools\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://localhost:8080/Selenium_CSS_Selectors/HomeServlet");
+	}
+	@AfterClass
+	public static void shutDown() {
+		driver.close();
+	}
+	
+	@Test
+	public void findByCssBasic() {
+		driver.get("http://localhost:8080/Selenium_CSS_Selectors/HomeServlet");
+		// The following example will use the full CSS path.
+		WebElement pLink = driver.findElement(By.cssSelector("html > body > div > p > a"));
+		String actual = pLink.getText();
+		assertThat(actual, equalTo("p Link"));
+		/* The following example will use the partial CSS path that is sufficient 
+		 * because it provides a unique path to the target element. In other words, 
+		 * there are no other elements which fit this pattern so Selenium is able to 
+		 * isolate the target element. */
+		pLink = driver.findElement(By.cssSelector("div > p > a"));
+		assertThat(actual, equalTo("p Link"));
+	}
+	
+	
+}

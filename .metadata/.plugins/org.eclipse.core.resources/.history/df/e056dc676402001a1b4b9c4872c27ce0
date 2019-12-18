@@ -1,0 +1,25 @@
+package springbasic.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/Hello")
+	public String showIndexPage() {
+		return "Hello";
+	}
+	
+	@RequestMapping("/")
+	public String showWelcomePage() {
+		return "Welcome";
+	}
+	
+	@RequestMapping("/Congrats")
+	public String showCongratulationsPage() {
+		return "Congratulations";
+	}
+	
+	
+}

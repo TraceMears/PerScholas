@@ -1,0 +1,32 @@
+package mears.trace.stats_application.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import mears.trace.stats_application.models.User;
+import mears.trace.stats_application.repositories.FighterRepository;
+import mears.trace.stats_application.repositories.UserRepository;
+
+@Controller
+public class UserController {
+	
+	@Autowired
+	UserRepository uRepo;
+	
+	@Autowired
+	FighterRepository fRepo;
+	
+	@RequestMapping("/userPage")
+	public String showUserPage() {
+		
+		
+		
+		
+		return null;
+	}
+	
+	
+	
+}

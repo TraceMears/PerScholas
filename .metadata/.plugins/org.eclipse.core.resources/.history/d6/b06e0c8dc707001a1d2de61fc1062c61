@@ -1,0 +1,12 @@
+package com.perscholas.hibernate_validation_dao.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class BookController {
+	
+	@Getmapping("/")
+	public String showBooks() {
+		return "Books";
+	}
+}

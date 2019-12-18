@@ -1,0 +1,10 @@
+package com.perscholas.algorithms;
+
+public class ArraySortExercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.perscholas.rest_controller.config;
+
+import org.springframework.context.annotation.Bean;
+
+public class RootAppConfig {
+	
+}

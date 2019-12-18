@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContextState>
+<org.eclipse.mylyn.context.ui.editors>
+<MonitoredWindowOpenEditors class="org.eclipse.ui.internal.WorkbenchWindow" isActive="true" isLaunching="true" number="0">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomeServlet.java" partName="HomeServlet.java" title="HomeServlet.java" tooltip="">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletExercises/src/main/java/servlets/HomeServlet.java"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDAO.java" partName="UserDAO.java" title="UserDAO.java" tooltip="CaseStudyClasses/src/main/java/DAOs/UserDAO.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CaseStudyClasses/src/main/java/DAOs/UserDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" partName="User.java" title="User.java" tooltip="CaseStudyClasses/src/main/java/classes/User.java">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CaseStudyClasses/src/main/java/classes/User.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="138"/>
+</editor>
+</MonitoredWindowOpenEditors>
+</org.eclipse.mylyn.context.ui.editors>
+</ContextState>

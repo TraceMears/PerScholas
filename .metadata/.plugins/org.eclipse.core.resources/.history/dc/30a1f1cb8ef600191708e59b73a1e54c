@@ -1,0 +1,69 @@
+package classes;
+
+public class Fighter {
+	
+	private int id;
+	private double sigLpm;
+	private double sigApm;
+	private double tdpF;
+	private double subPF;
+	private double koPF;	
+	private double finRate;
+	
+	public Fighter(double sigLpm, double sigApm, double subPF, double tdpF, double finRate) {
+		this.sigLpm = sigLpm;
+		this.sigApm = sigApm;
+		this.tdpF = tdpF;
+		this.subPF = subPF;
+		this.koPF = koPF;
+		this.finRate = finRate;
+	}
+	
+	public Fighter(int id, double sigLpm, double sigApm, double subPF, double tdpF, double finRate) {
+		this.id = id;
+		this.sigLpm = sigLpm;
+		this.sigApm = sigApm;
+		this.subPF = subPF;
+		this.tdpF = tdpF;
+		this.finRate = finRate;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}	
+	
+	public double getSigLpm() {
+		return sigLpm;
+	}
+	public void setSigLpm(double sigLpm) {
+		this.sigLpm = sigLpm;
+	}
+	public double getSigApm() {
+		return sigApm;
+	}
+	public void setSigApm(double sigApm) {
+		this.sigApm = sigApm;
+	}
+	public double getSubpF() {
+		return subpF;
+	}
+	public void setSubpF(double subpF) {
+		this.subpF = subpF;
+	}
+	public double getTdpF() {
+		return tdpF;
+	}
+	public void setTdpF(double tdpF) {
+		this.tdpF = tdpF;
+	}
+	public double getFinRate() {
+		return finRate;
+	}
+	public void setFinRate(double finRate) {
+		this.finRate = finRate;
+	}
+		
+}
