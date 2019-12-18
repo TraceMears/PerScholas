@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumCSSTest" project="Selenium_CSS_Selectors" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.348">
-    <testcase name="findByCssBasic" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.168"/>
-    <testcase name="findCssSiblings" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.18"/>
-  </testsuite>
-</testrun>

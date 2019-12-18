@@ -1,9 +1,0 @@
-driver=org.mariadb.jdbc.Driver
-url=jdbc:mariadb://localhost:1234/SoftwareDeveloperClub?serverTimezone=UTC
-user=root
-password=root
-
-#driver=org.hsqldb.jdbcDriver
-#url=jdbc:hsqldb:mem:testjdbc
-#user=root
-#password=root

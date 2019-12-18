@@ -36,6 +36,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Student\Desktop\Java Projects\LinkedList.zip"/>
 			<item value="C:\Users\Student\Desktop\Java Projects\Trace_Mears_DAOs_and_JUnit.zip"/>
 			<item value="C:\Users\Student\Desktop\Java Projects\JUnitSBA_Trace_Mears.zip"/>
 			<item value="C:\Users\Student\Desktop\TraceMearsCaseStudyDeliverable1\classes.zip"/>

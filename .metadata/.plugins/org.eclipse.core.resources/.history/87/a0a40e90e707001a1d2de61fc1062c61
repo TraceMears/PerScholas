@@ -1,7 +1,0 @@
-package com.perscholas.hibernate_validation_dao.repository.impl;
-
-import com.perscholas.hibernate_validation_dao.repository.BookRepository;
-
-public class MariaDbBookRepository implements BookRepository {
-
-}

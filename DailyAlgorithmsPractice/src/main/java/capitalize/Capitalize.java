@@ -5,6 +5,7 @@ public class Capitalize {
 	public static void main(String[] args) {
 		String string = "hello you need to capitalize each word of this string";
 		capitalizeEach(string);		
+		String h = "hello";
 	}
 
 	public static void capitalizeEach(String s) {

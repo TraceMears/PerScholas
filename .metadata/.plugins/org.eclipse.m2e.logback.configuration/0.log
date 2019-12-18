@@ -17110,3 +17110,17 @@ org.eclipse.jdt.core.JavaModelException: WebContent/WEB-INF/classes/com/perschol
 2019-12-18 14:09:09,228 [Worker-2889: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp\src\main\resources
 2019-12-18 14:09:09,232 [Worker-2889: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-12-18 14:09:09,377 [Worker-2889: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp\src\test\resources
+2019-12-18 14:36:11,737 [Worker-3074: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:11,752 [Worker-3074: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp\src\main\resources
+2019-12-18 14:36:11,752 [Worker-3074: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:11,768 [Worker-3074: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp\src\test\resources
+2019-12-18 14:36:20,893 [Worker-3129: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: StatsApp:StatsApp:0.0.1-SNAPSHOT @ C:\Users\Student\eclipse-workspace\StatsApp2\pom.xml.
+2019-12-18 14:36:22,423 [Worker-3129: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:22,423 [Worker-3129: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-18 14:36:22,423 [Worker-3129: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:22,439 [Worker-3129: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp2\src\test\resources
+2019-12-18 14:36:28,513 [Worker-3198: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:28,542 [Worker-3198: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-18 14:36:28,562 [Worker-3198: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-12-18 14:36:28,570 [Worker-3198: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Student\eclipse-workspace\StatsApp2\src\test\resources
+2019-12-18 14:42:51,923 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

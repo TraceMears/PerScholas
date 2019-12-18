@@ -1,8 +1,0 @@
-package mears.trace.stats_application.controllers;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class TableController {
-
-}

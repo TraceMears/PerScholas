@@ -1,9 +1,0 @@
-driver=org.mariadb.jdbc.Driver
-url=jdbc:mariadb://localhost:1234/Book_club?serverTimezone=UTC
-user=student
-password=student
-
-#driver=org.hsqldb.jdbcDriver
-#url=jdbc:hsqldb:mem:testjdbc
-#user=root
-#password=root

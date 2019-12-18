@@ -1,5 +1,0 @@
-package com.perscholas.jdbctemplate.config;
-
-public class RootAppConfig {
-
-}

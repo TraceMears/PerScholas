@@ -1,6 +1,0 @@
-package springbasic.controllers;
-
-@Controller
-public class SignupController {
-
-}

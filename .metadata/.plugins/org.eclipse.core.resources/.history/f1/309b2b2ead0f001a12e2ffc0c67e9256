@@ -1,5 +1,0 @@
-
-	<nav>
-		<a href="${pageContext.request.contextPath}/HomeServlet/xPath1">Main Page</a>
-		<a href="${pageContext.request.contextPath}/HomeServlet/xPath2">Second Page</a>
-	</nav>

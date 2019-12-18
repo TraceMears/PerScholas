@@ -1,5 +1,0 @@
-package com.perscholas.jdbctemplate.controllers;
-
-public class StudentController {
-
-}

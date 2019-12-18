@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumXPathAxesTest" project="Selenium_CSS_Selectors" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="1.001">
-    <testcase name="xPathFollowing" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.205"/>
-    <testcase name="xPathChild" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.116"/>
-    <testcase name="xPathPreceding" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.221"/>
-    <testcase name="xPathAncestor" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.168"/>
-    <testcase name="xPathParent" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.291"/>
-  </testsuite>
-</testrun>

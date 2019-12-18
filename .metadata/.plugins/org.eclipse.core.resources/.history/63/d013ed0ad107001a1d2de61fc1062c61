@@ -1,7 +1,0 @@
-package com.perscholas.hibernate_validation_dao.config;
-
-import org.springframework.context.annotation.Bean;
-
-public class RootAppConfig {
-	
-}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumCSSTest" project="Selenium_CSS_Selectors" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.752">
-    <testcase name="findCssListByClass" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.24"/>
-    <testcase name="findCssSiblingsUsingId" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.093"/>
-    <testcase name="findCssUsingClassCombinations" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.072"/>
-    <testcase name="findByCssBasic" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.102"/>
-    <testcase name="findCssSiblings" classname="com.perscholas.css_selectors.selenium_tests.SeleniumCSSTest" time="0.245"/>
-  </testsuite>
-</testrun>

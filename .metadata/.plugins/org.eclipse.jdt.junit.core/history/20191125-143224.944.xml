@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SeleniumXPathAxesTest" project="Selenium_CSS_Selectors" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.472">
-    <testcase name="xPathPreceding" classname="com.perscholas.css_selectors.selenium_tests.SeleniumXPathAxesTest" time="0.472"/>
-  </testsuite>
-</testrun>

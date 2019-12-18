@@ -1,5 +1,0 @@
-package springcoreproject_02.greeting_interface.impl;
-
-public class EnglishGreeting {
-
-}
